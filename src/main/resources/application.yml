@@ -4,9 +4,9 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/test?charset=utf8mb4&useSSL=true&nullCatalogMeansCurrent=true
+    url: jdbc:mysql://42.192.170.190:3310/activiti?charset=utf8mb4&useSSL=true&nullCatalogMeansCurrent=true
     username: root
-    password: admin
+    password: 123456
     type: com.alibaba.druid.pool.DruidDataSource
 
 
@@ -35,6 +35,11 @@ spring:
     #process-definition-location-suffixes: #流程文件格式
     #  - **.bpmn20.xml
     #  - **.bpmn
+
+logging:
+  level:
+    com.len.mapper: DEBUG
+    org.activiti.engine.impl.persistence.entity: trace
 
 mybatis:
   mapper-locations: classpath:mapping/*.xml

@@ -32,6 +32,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <!--<exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>-->
         </dependency>
 
         <dependency>
@@ -71,6 +77,12 @@
             <artifactId>activiti-spring-boot-starter</artifactId>
             <version>${activiti.verison}</version>
         </dependency>
+
+        <!-- log4j2 -->
+        <!--<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
+        </dependency>-->
     </dependencies>
 
     <build>
